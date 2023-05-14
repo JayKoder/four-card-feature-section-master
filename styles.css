@@ -1,10 +1,62 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   font-family: 'Roboto Slab', serif;
+  background: #fafafa;
+  font-size: 15px;
 }
+
+main {
+  padding: 8px;
+}
+
+.intro {
+  padding: 20px 0;
+  text-align: center;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.intro h2, .intro p {
+  margin: 10px auto;
+}
+
+.intro span {
+  font-weight: 200;
+  display: block;
+}
+
+.intro p {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.section-container {
+  display: flex;
+}
+
+section {
+  /* display: flex; */
+  /* flex-direction: column; */
+  background: #ffffff;
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+  padding: 15px;
+}
+
+section h4, section p {
+  margin: 5px 0;
+}
+
+
+
+
+
+
 
 
 .attribution {
