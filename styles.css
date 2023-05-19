@@ -1,64 +1,105 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-body {
+body, html {
   font-family: 'Roboto Slab', serif;
   background: #fafafa;
+  height: 100%;
   font-size: 15px;
 }
 
 main {
-  padding: 8px;
+  padding: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 .intro {
-  padding: 20px 0;
   text-align: center;
-  width: 50%;
-  margin: 10px auto;
+  width: 70%;
 }
 
-.intro h2, .intro p {
-  margin: 10px auto;
+.intro h2 {
+  margin: 20px auto;
 }
 
-.intro span {
-  font-weight: 200;
+h2 span {
   display: block;
 }
 
 .intro p {
-  font-size: 12px;
-  font-weight: 200;
+  margin: 20px auto;
+  width: 50%;
 }
 
+
 .section-container {
-  display: flex;
+  padding: auto 15px;
+  width: 79%;
+  position: relative;
+  height: 100%;
 }
 
 section {
-  /* display: flex; */
-  /* flex-direction: column; */
-  background: #ffffff;
-  width: 200px;
+  width: 300px;
   height: 200px;
+  background-color: #ffffff;
   margin: 15px;
-  padding: 15px;
+  padding: 20px;
+  border-radius: 5px;
+  border-top: 3px solid transparent;
+  box-shadow: 0px 10px 23px -7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 10px 23px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 23px -7px rgba(0,0,0,0.75);
+}
+
+.supervisor {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  border-color: #85cecd;
+}
+
+.team-builder {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-color: #b94848;
+}
+
+.karma {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-color: #f9a828;
+}
+
+.calculator{
+  position: absolute;
+  right: 0;
+  top: 25%;
+  border-color: #438bcb;
 }
 
 section h4, section p {
-  margin: 5px 0;
+  padding-top: 10px;
 }
 
+section img {
+  position: absolute;
+  left: 70%;
+  bottom: 10%;
+  width: 50px;
+}
 
-
-
-
-
-
-
+/* FOOTER */
 .attribution {
   font-size: 11px;
   text-align: center;
